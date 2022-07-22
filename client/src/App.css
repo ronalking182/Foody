@@ -1,0 +1,44 @@
+.App{
+  background-color:var(--background-color);
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+}
+.menu1{
+ width: 15%;
+ background-color:green;
+}
+.menu2{
+ width: 5%;
+ background-color:green;
+}
+
+.main-deal1{
+  width: 85%;
+  background-color:red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.main-deal2{
+  width: 95%;
+  background-color:red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.ii{
+ width: 70%;
+ background-color:blue;
+}
+.pp{
+width: 30%;
+background-color:yellow;
+}
+
