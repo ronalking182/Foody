@@ -10,13 +10,21 @@ import {
     AiOutlineHeart, 
     // AiTwotoneHeart, 
     AiOutlineHome, 
-    // AiOutlineShoppingCart
+    AiOutlineShoppingCart
 } from 'react-icons/ai'
 // import { NavLink } from "react-router-dom";
 import ModeDisplay from "../UI/ModeDisplay";
 
+
+
+
 const MenuBar = () => {
-const {openNav, setOpenNav} = useMyContext()
+const {openNav, setOpenNav } = useMyContext()
+
+
+ 
+
+
     const handleNavOpen = () =>{
         if(openNav){
           setOpenNav(false);
@@ -28,12 +36,12 @@ const {openNav, setOpenNav} = useMyContext()
 
   return <div className="nav-overall-container">
     <div className={openNav ? "nav-menu1":"nav-menu2"}><HiOutlineMenuAlt2 className='Men' onClick={handleNavOpen}/></div>
-        <span className={openNav ? "my-link1" : "my-link2"}><GiMeal className='con'/> {openNav ? <p>Meals</p>: ''}</span>
+        <span className={openNav ? "my-link1" : "my-link2"}><GiMeal className='con'/> {openNav && <p>Meals</p>}</span>
         <span className={openNav ? "my-link1" : "my-link2"}><ModeDisplay className='con'/></span>
-        <span className={openNav ? "my-link1" : "my-link2"}><AiOutlineHeart className='con'/> {openNav ?<p>Favorites</p> : ''}</span>
-        <span className={openNav ? "my-link1" : "my-link2"}><AiOutlineHome className='con'/> { openNav? <p>Home</p>: ''}</span>
-        <span className={openNav ? "my-link1" : "my-link2"}><FiSettings className='con'/> { openNav ? <p>Settings</p>: ''}</span>
-        {/* <span className="my-link">hello</span> */}
+        <span className={openNav ? "my-link1" : "my-link2"}><AiOutlineHeart className='con'/> {openNav  &&<p>Favorites</p>}</span>
+        <span className={openNav ? "my-link1" : "my-link2"}><AiOutlineHome className='con'/> { openNav && <p>Home</p>}</span>
+        <span className={openNav ? "my-link1" : "my-link2"}><FiSettings className='con'/> { openNav  && <p>Settings</p>}</span>
+        <span className={`MM ${openNav ? "my-link1" : "my-link2"}`}><AiOutlineShoppingCart className='con'/>{openNav  && <p>Cart</p>}</span>
   </div>;
 };
 

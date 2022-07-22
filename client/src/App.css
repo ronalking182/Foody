@@ -36,12 +36,34 @@
   flex-direction: row;
 }
 
-.ii{
- width: 70%;
- background-color:blue;
-}
+ii{
+  width: 100%;
+  background-color:blue !important;
+ }
 .pp{
-width: 30%;
-background-color:yellow;
+  width: 0%;
+  /* background-color:yellow; */
+}
+
+
+@media screen and (min-width: 768px) {
+
+  .ii{
+    width: 70%;
+    background-color:blue;
+   }
+   /* .iii{
+    width: 100%;
+    background-color:blue;
+   } */
+   .pp{
+   width: 30%;
+   background-color:yellow;
+   }
+   /* .qq{
+     width: 0%;
+   } */
+
+  
 }
 
