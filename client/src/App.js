@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
 
-    <span className={openNav ? 'menu1' : 'menu2'}>
+    <span className={`me ${openNav ? 'menu1' : 'menu2'}`}>
     <MenuBar/>
        </span>
 

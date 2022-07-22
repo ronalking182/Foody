@@ -14,7 +14,7 @@ body{
 :root{
   --font-color:rgb(30, 30, 30);
   /* --link-color:cornflowerblue; */
-  --background-color:whitesmoke;
+  --background-color:#FFFF;
   }
   
   [data-theme="dark"]{

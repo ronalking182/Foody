@@ -1,19 +1,22 @@
 .App{
   background-color:var(--background-color);
   width: 100vw;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
+}
 
+.me{
+  height: 100%;
+  background-color: #eee;
 }
 .menu1{
  width: 15%;
- background-color:green;
 }
 .menu2{
  width: 5%;
- background-color:green;
 }
 
 .main-deal1{
